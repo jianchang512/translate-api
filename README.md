@@ -10,14 +10,18 @@
 ![image](https://github.com/jianchang512/translate-api/assets/3378335/37a49f22-b254-44f2-b73d-1d2c843fc16e)
 
 
-本文主要包括：
+## 本文主要包括：
 
-注册账号并登陆
-创建Worker服务
-复制粘贴代码并部署启动
-绑定自己的域名
-在代码中或软件中使用这个api
-注册账号并登陆
+1. 注册账号并登陆
+2. 创建Worker服务
+3. 复制粘贴代码并部署启动
+4. 绑定自己的域名
+5. 在代码中或软件中使用这个api
+
+ 
+## 注册账号并登陆
+
+
 如果还没有账号，点击这个地址去注册，这个很简单 https://dash.cloudflare.com/sign-up
 
 如果有账号，直接去登录 https://dash.cloudflare.com/login
@@ -25,7 +29,8 @@
 ![image](https://github.com/jianchang512/translate-api/assets/3378335/4bb6d2dc-07d8-4ce3-99ff-a3ae5748c357)
 
 
-创建Worker服务
+## 创建Worker服务
+
 登录后，点击左侧的“Workers和Pages”
 
 ![image](https://github.com/jianchang512/translate-api/assets/3378335/3fc15875-e83f-44e1-b7a0-6393098889ba)
@@ -56,7 +61,8 @@
 ![image](https://github.com/jianchang512/translate-api/assets/3378335/66590225-fc0f-42cc-8af6-1f8996d158fa)
 
 
-复制粘贴代码
+## 复制粘贴代码并部署启动
+
 点击上一步最后显示的“编辑代码”，等待页面显示，然后删掉左侧所有的代码，并粘贴以下代码到左侧,其中的 123456是你的访问密钥，可以修改下，防止它人使用浪费你的免费流量。
 
 import { Ai } from './vendor/@cloudflare/ai.js';
@@ -107,7 +113,8 @@ https://my-translate-api.2124455076.workers.dev/?text=%E4%BD%A0%E5%A5%BD%E5%95%8
 
 这个地址就是你的翻译API接口地址。
 
-绑定自己的域名
+## 绑定自己的域名
+
 如果觉得这个地址太长不好，或者有可能workers.dev 被墙，国内无法访问，而又不想挂代理，可以绑定自己的域名。
 
 首先你需要把你的域名NS服务器修改为cloudflare的，等待生效后，回到cloudflare首页 https://dash.cloudflare.com/，绑定你的域名
@@ -140,11 +147,16 @@ https://my-translate-api.2124455076.workers.dev/?text=%E4%BD%A0%E5%A5%BD%E5%95%8
 ![image](https://github.com/jianchang512/translate-api/assets/3378335/903b81b1-5730-4e32-a534-606c9cb0c293)
 
 
-在代码和软件中使用这个api
+## 在代码和软件中使用这个api
+
 首先要记下 m2m100可以支持的语言代码
 
+```
 阿非利卡语（af）、阿姆哈拉语（am）、阿拉伯语（ar）、阿斯图里亚斯语（ast）、阿塞拜疆语（az）、巴什基尔语（ba）、白俄罗斯语（be）、保加利亚语（bg）、孟加拉语（bn）、布列塔尼语（br）、波斯尼亚语（bs）、加泰罗尼亚语（ca）、宿务语（ceb）、捷克语（cs）、威尔士语（cy）、丹麦语（da）、德语（de）、希腊语（el）、英语（en）、西班牙语（es）、爱沙尼亚语（et）、波斯语（fa）、富拉语（ff）、芬兰语（fi）、法语（fr）、西弗里西亚语（fy）、爱尔兰语（ga）、苏格兰盖尔语（gd）、加利西亚语（gl）、古吉拉特语（gu）、豪萨语（ha）、希伯来语（he）、印地语（hi）、克罗地亚语（hr）、海地克里奥尔语（ht）、匈牙利语（hu）、亚美尼亚语（hy）、印度尼西亚语（id）、伊博语（ig）、伊洛卡诺语（ilo）、冰岛语（is）、意大利语（it）、日语（ja）、爪哇语（jv）、格鲁吉亚语（ka）、哈萨克语（kk）、中央高棉语（km）、卡纳达语（kn）、韩语（ko）、卢森堡语（lb）、甘达语（lg）、林加拉语（ln）、老挝语（lo）、立陶宛语（lt）、拉脱维亚语（lv）、马达加斯加语（mg）、马其顿语（mk）、马拉雅拉姆语（ml）、蒙古语（mn）、马拉地语（mr）、马来语（ms）、缅甸语（my）、尼泊尔语（ne）、荷兰语（nl）、挪威语（no）、北索托语（ns）、奥克西塔尼语（oc），奥里亚语（or）、旁遮普语（pa）、波兰语（pl）、普什图语（ps）、葡萄牙语（pt）、罗马尼亚语（ro）、俄语（ru）、信德语（sd）、僧伽罗语（si）、斯洛伐克语（sk）、斯洛文尼亚语（sl）、索马里语（so）、阿尔巴尼亚语（sq）、塞尔维亚语（sr）、斯瓦蒂语（ss）、巽他语（su）、瑞典语（sv）、斯瓦希里语（sw）、泰米尔语（ta）、泰语（th）、他加禄语（tl）、茨瓦纳语（tn）、土耳其语（tr）、乌克兰语（uk）、乌尔都语（ur）、乌兹别克语（uz）、越南语（vi）、沃洛夫语（wo）、科萨语（xh）、依地语（yi）、约鲁巴语（yo）、中文（zh）、祖鲁语（zu）
-使用python代码使用这个api
+
+```
+
+**在python代码使用这个api**
 
 ```
 import requests
@@ -159,7 +171,7 @@ print(response.json())
 
 就这么简单
 
-在视频翻译软件中使用
+**在视频翻译软件中使用**
 
 打开左上角设置菜单--自定义翻译API，填写你的api地址和密钥，然后测试下
 
@@ -171,4 +183,4 @@ print(response.json())
 ![image](https://github.com/jianchang512/translate-api/assets/3378335/2579a904-4098-4be1-87ee-967d1356155f)
 
 
-再次感谢网络菩萨。
+感谢网络菩萨。
