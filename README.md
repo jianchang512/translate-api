@@ -5,7 +5,7 @@
 ![image](https://github.com/jianchang512/translate-api/assets/3378335/71992dce-fc57-45e7-91dc-e97c4c7bfc47)
 
 
-今天主要介绍下如何在cloudflare后台搭建一个可用的免费翻译api，使用 m2m100-1.2B 模型，实现后的效果如下
+本文主要介绍下如何在cloudflare后台搭建一个可用的免费翻译api，使用 m2m100-1.2B 模型，实现后的效果如下
 
 ![image](https://github.com/jianchang512/translate-api/assets/3378335/37a49f22-b254-44f2-b73d-1d2c843fc16e)
 
