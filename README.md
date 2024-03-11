@@ -65,6 +65,8 @@
 
 点击上一步最后显示的“编辑代码”，等待页面显示，然后删掉左侧所有的代码，并粘贴以下代码到左侧,其中的 123456是你的访问密钥，可以修改下，防止它人使用浪费你的免费流量。
 
+```
+
 import { Ai } from './vendor/@cloudflare/ai.js';
 
 // 这是访问密钥
@@ -95,6 +97,8 @@ export default {
     return Response.json({code:0,msg:"ok",text:response.translated_text });
   }
 };
+
+```
 
 ![image](https://github.com/jianchang512/translate-api/assets/3378335/193c18e4-98ef-419d-8cc9-868106a227f7)
 
