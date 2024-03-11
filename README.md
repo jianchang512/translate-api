@@ -121,10 +121,11 @@ https://my-translate-api.2124455076.workers.dev/?text=%E4%BD%A0%E5%A5%BD%E5%95%8
 
 如果觉得这个地址太长不好，或者有可能workers.dev 被墙，国内无法访问，而又不想挂代理，可以绑定自己的域名。
 
-首先你需要把你的域名NS服务器修改为cloudflare的，等待生效后，回到cloudflare首页 https://dash.cloudflare.com/，绑定你的域名
+首先你需要把你的域名NS服务器修改为cloudflare的，等待生效后，回到cloudflare首页 https://dash.cloudflare.com  绑定你的域名
 
 > 
 > NS	ezra.ns.cloudflare.com
+> 
 > NS	karsyn.ns.cloudflare.com
 >
 
