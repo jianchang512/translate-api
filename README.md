@@ -81,8 +81,8 @@ export default {
     }
     const inputs = {
       text: text,
-      source_lang: source_language,
-      target_lang: target_language,
+      source_lang: source_language.substr(0,2),
+      target_lang: target_language.substr(0,2),
     };
     const response = await env.AI.run('@cf/meta/m2m100-1.2b', inputs);
 
