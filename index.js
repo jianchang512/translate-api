@@ -20,8 +20,8 @@ export default {
     const ai = new Ai(env.AI);
     const inputs = {
       text: text,
-      source_lang: source_language,
-      target_lang: target_language
+      source_lang: source_language.substr(0,2),
+      target_lang: target_language.substr(0,2)
     };
     const response = await ai.run('@cf/meta/m2m100-1.2b', inputs);
     if(response.translated_text.indexOf('ERROR')===0){
